@@ -18,10 +18,9 @@ let he4rt = {
 
 
 //Também é possível criar um objeto vazio através do "object constructor". Exemplo:
-/*
-let user = new Object();
-let user = {};
-*/
+
+var user = new Object();
+var user = {};
 
 
 
