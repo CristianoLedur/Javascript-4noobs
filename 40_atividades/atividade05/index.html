@@ -6,6 +6,16 @@
     <title>Exercício 5</title>
   </head>
   <body>
-  
+    <label for="texto">Insira um texto:</label>
+    <input type="text" id="texto">
+    <button id="botao">Concluir</button>
+    <p id="saida"></p>
+    <script>
+      var btn = document.getElementById("botao");
+      btn.addEventListener("click", function() {
+        var textoCompleto = document.getElementById("texto").value;
+        var textoSaida = document.getElementById("saida").innerHTML = textoCompleto.length;
+      });
+    </script>
   </body>
 </html>

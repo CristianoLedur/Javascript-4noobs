@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 8</title>
+</head>
+<body>
+  <label for="cpf">Informe seu cpf:</label>
+  <input id="cpf" maxlength="11" />
+  <span id="cpfComPontuacao"></span>
+  
+  <script type="text/javascript">
+    var cpf = document.getElementById("cpf");
+    cpf.addEventListener("keypress", function(event) {
+      var escrita = document.getElementById("cpfComPontuacao");
+      if (cpfComPontuacao.length === 3 || cpfComPontuacao.length === 7) {
+        escrita.innerHTML += ".";
+      } else if (cpfComPontuacao.length === 12){
+        escrita.innerHTML+= "-";
+      }
+      escrita.innerHTML += event.key;
+    })
+  </script>
+</body>
+</html>
