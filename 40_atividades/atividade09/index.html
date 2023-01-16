@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercício 8</title>
+  <title>Exercício 9</title>
 </head>
 <body>
   <label for="cpf">Informe seu cpf:</label>
-  <input maxlength="11" id="cpf" />
+  <input maxlength="14" id="cpf" />
   <span id="cpfComPontuacao" style="color: red;"></span>
   
   <script type="text/javascript">
@@ -15,11 +15,7 @@
     var i = 0;
     cpfInput.addEventListener("keypress", function(event) {
       var saida = document.getElementById("cpfComPontuacao");
-      if (i == 3 || i == 6) {
-        saida.innerHTML += "." + event.key;
-        i++;
-      } else if (i == 9) {
-        saida.innerHTML += "-" + event.key;
+      if (i == 3 || i == 7 || i == 11) {
         i++;
       } else {
         saida.innerHTML += event.key;
